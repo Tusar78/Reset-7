@@ -20,4 +20,4 @@ const average = ((math + biology + chemistry + physics + bengali) / 5).toFixed(2
 
 // It should be number
 const result = parseFloat(average);
-console.log(result);
+console.log(result) ;
