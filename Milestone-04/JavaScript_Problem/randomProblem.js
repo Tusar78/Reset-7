@@ -19,3 +19,7 @@ let i = 5;
 for (let i = 5; i > 0; i--) {
   console.log(TextInfo);  
 }
+
+let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
+
+console.log(Array.isArray(arr));
