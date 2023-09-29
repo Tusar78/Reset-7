@@ -19,3 +19,14 @@ if (num1 > num2 && num1 > num3) {
 } else {
   console.log(`${num3} is greater`);
 }
+
+// Problem 02
+const slide1 = 9;
+const slide2 = 4;
+const slide3 = 90;
+
+if (slide1 == slide2 || slide1 == slide3) {
+  console.log(`This is isosceles`);
+} else {
+  console.log(`This is not isosceles`);
+}
