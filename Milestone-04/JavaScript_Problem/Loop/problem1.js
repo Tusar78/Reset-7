@@ -47,22 +47,45 @@
 //   i++;
 // }
 
-const books = {
-  Js: 200,
-  python: 250,
-  php: 150,
-  c: 180,
-  cPlus: 290
-}
+// const books = {
+//   Js: 200,
+//   python: 250,
+//   php: 150,
+//   c: 180,
+//   cPlus: 290
+// }
 
-let entry = Object.entries(books);
+// let entry = Object.entries(books);
 
-let bookUnder2 = [];
+// let bookUnder2 = [];
 
-for (let i = 0; i < entry.length; i++) {
-  if (entry[i][1] < 200) {
-    bookUnder2.push(entry[i][0]);
+// for (let i = 0; i < entry.length; i++) {
+//   if (entry[i][1] < 200) {
+//     bookUnder2.push(entry[i][0]);
+//   }
+// }
+
+// console.log(bookUnder2);
+
+// const foo = () => {
+//   bar();
+//   console.log('foo');
+// }
+
+// const bar=()=> {
+//   console.log('bar');
+// }
+
+// foo();
+
+function avg(one, two, three) {
+  let agr = arguments.length;
+  let sum = 0;
+  for (const item of arguments) {
+    sum += item;
   }
+
+  console.log(sum / agr);
 }
 
-console.log(bookUnder2);
+avg(10,20,30);
