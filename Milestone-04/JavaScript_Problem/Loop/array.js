@@ -181,26 +181,26 @@ let phones = [
 //   console.log(chipestPhone);
 
 
-const products = [
-    {productName: 'Shirt', price: 740, quantity: 3},
-    {productName: 'Shoe', price: 1780, quantity: 1},
-    {productName: 'T-Shirt', price: 740, quantity: 1},
-    {productName: 'Panjabi', price: 3460, quantity: 1},
-    {productName: 'Dress', price: 2000, quantity: 1},
-]
+// const products = [
+//     {productName: 'Shirt', price: 740, quantity: 3},
+//     {productName: 'Shoe', price: 1780, quantity: 1},
+//     {productName: 'T-Shirt', price: 740, quantity: 1},
+//     {productName: 'Panjabi', price: 3460, quantity: 1},
+//     {productName: 'Dress', price: 2000, quantity: 1},
+// ]
 
-const totalPrices = products => {
-    let qWisePrice = []
-    let totalPrice = 0;
-    for (let i = 0; i < products.length; i++) {
-        qWisePrice[i] = `${products[i].productName} = ${products[i].price * products[i].quantity}`;
-        let qp = products[i].price * products[i].quantity;
-        totalPrice += qp;
-    }
+// const totalPrices = products => {
+//     let qWisePrice = []
+//     let totalPrice = 0;
+//     for (let i = 0; i < products.length; i++) {
+//         qWisePrice[i] = `${products[i].productName} = ${products[i].price * products[i].quantity}`;
+//         let qp = products[i].price * products[i].quantity;
+//         totalPrice += qp;
+//     }
 
-    return {totalPrice, qWisePrice}
-}
+//     return {totalPrice, qWisePrice}
+// }
 
-const {totalPrice, qWisePrice} = totalPrices(products)
-console.log(qWisePrice);
-console.log(totalPrice);
+// const {totalPrice, qWisePrice} = totalPrices(products)
+// console.log(qWisePrice);
+// console.log(totalPrice);
