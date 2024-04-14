@@ -68,11 +68,16 @@ Input”
 //         }
 //     }
 
+//     for (let i = 0; i < arr.length; i++) {
+//        if (arr[i] === arr[i + 1]) {
+//         return 'equal';
+//        }
+//     }
 //     const sortArr = arr.sort((a, b) => a - b);
 //     return sortArr
 // }
 
-// const mySort = sortMaker([120, 44]);
+// const mySort = sortMaker([44, 4]);
 // console.log(mySort);
 
 /**
@@ -126,6 +131,9 @@ Task:
  */
 
 function canPay(changeArray, totalDue) {
+    if (!Array.isArray(changeArray)) {
+        return 'Please Enter Array!'
+    }
     const productPrice = totalDue;
     let totalMoney = 0;
     for (const taka of changeArray) {
@@ -139,5 +147,5 @@ function canPay(changeArray, totalDue) {
     }
 }
 
-const result = canPay([1, 5, 5], 10);
+const result = canPay(10, 10);
 console.log(result);
