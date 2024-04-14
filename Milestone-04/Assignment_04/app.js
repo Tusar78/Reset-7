@@ -130,6 +130,82 @@ Task:
 রি টার্ন করে দি বে ।
  */
 
+// function canPay(changeArray, totalDue) {
+//     if (!Array.isArray(changeArray)) {
+//         return 'Please Enter Array!'
+//     }
+//     const productPrice = totalDue;
+//     let totalMoney = 0;
+//     for (const taka of changeArray) {
+//         totalMoney += taka;
+//     }
+
+//     if (totalMoney >= productPrice) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// const result = canPay(10, 10);
+// console.log(result);
+
+
+
+
+function cubeNumber(number) {
+    let result;
+    if (typeof number !== 'number' || number < 1) {
+        result = 'Please Enter the valid number!';
+    } else {
+        result = number * number * number;
+    }
+    return result;
+}
+
+function matchFinder(string1, string2) {
+    if (typeof string1 !== 'string' || typeof string2 !== 'string') {
+        return 'Please Enter String Data!'
+    } else {
+        if (string1.includes(string2)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+}
+
+function sortMaker(arr) {
+    for (const ar of arr) {
+        if (ar < 0) {
+            return 'Invalid input'
+        }
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+       if (arr[i] === arr[i + 1]) {
+        return 'equal';
+       }
+    }
+    const sortArr = arr.sort((a, b) => a - b);
+    return sortArr
+}
+
+function findAddress(obj) {
+  let myObj = {
+    street: "__",
+    house: "__",
+    society: "__",
+  };
+
+  let address = `${obj.street ? obj.street : myObj.street},${
+    obj.house ? obj.house : myObj.house
+  },${obj.society ? obj.society : myObj.society}`;
+
+  return address
+}
+
 function canPay(changeArray, totalDue) {
     if (!Array.isArray(changeArray)) {
         return 'Please Enter Array!'
@@ -146,6 +222,3 @@ function canPay(changeArray, totalDue) {
         return false;
     }
 }
-
-const result = canPay(10, 10);
-console.log(result);
