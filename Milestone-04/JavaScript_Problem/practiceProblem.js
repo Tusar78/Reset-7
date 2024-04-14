@@ -15,3 +15,20 @@ const centimeterToMeter = centimeter => {
 
 const {meter} = centimeterToMeter(120);
 console.log(meter);
+
+const paperRequirements = (book1Q, book2Q, book3Q) => {
+    let pBook1 = 100;
+    let pBook2 = 200;
+    let pBook3 = 300;
+    
+    let totalB1 = pBook1 * book1Q;
+    let totalB2 = pBook2 * book2Q;
+    let totalB3 = pBook3 * book3Q;
+
+    let totalPaperNeed = totalB1 + totalB2 + totalB3;
+
+    return {totalPaperNeed}
+}
+
+const {totalPaperNeed} = paperRequirements(4, 2, 7);
+console.log(totalPaperNeed);
