@@ -48,3 +48,19 @@ const bestFriend = names => {
 
 const friend = bestFriend(friends);
 console.log(friend);
+
+const numbers = [4, 7, 8, 54, -78, 64, -4, 857, -47];
+const onlyPositive = numbers => {
+    const number = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > 0) {
+            number.push(numbers[i])
+        } else {
+            break;
+        }
+    }
+    return number;
+}
+
+const myNum = onlyPositive(numbers);
+console.log(myNum);
