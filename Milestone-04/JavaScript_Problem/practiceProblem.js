@@ -32,3 +32,19 @@ const paperRequirements = (book1Q, book2Q, book3Q) => {
 
 const {totalPaperNeed} = paperRequirements(4, 2, 7);
 console.log(totalPaperNeed);
+
+// Find Biggest Lenght name
+const friends = ['Tusar', 'Rakib', 'Sharif', 'Yasin', 'Arisha', 'Rochita', 'Jannat'];
+const bestFriend = names => {
+    let bigLength = '';
+    for (const name of names) {
+        if(bigLength.length < name.length) {
+            bigLength = name;
+        }
+    }
+
+    return bigLength;
+}
+
+const friend = bestFriend(friends);
+console.log(friend);
