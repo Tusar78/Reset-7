@@ -132,11 +132,12 @@ function canPay(changeArray, totalDue) {
         totalMoney += taka;
     }
 
-    if (totalMoney === productPrice) {
+    if (totalMoney >= productPrice) {
         return true;
     } else {
         return false;
     }
 }
 
-const result = canPay([1, 2, 5], 10);
+const result = canPay([1, 5, 5], 10);
+console.log(result);
