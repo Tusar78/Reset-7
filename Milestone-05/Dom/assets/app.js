@@ -9,3 +9,9 @@ setTimeout(() => {
 
 
 const box = document.querySelector(".box");
+
+if (box.children) {
+  console.log('Hello');
+} else {
+  console.log('world');
+}
