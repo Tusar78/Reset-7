@@ -44,17 +44,67 @@
 // How to find?…
 
 // The table with id="age-table".
-const ageTable = document.getElementById('age-table');
-console.log(ageTable);
-// All label elements inside that table (there should be 3 of them).
-const allOfLavel = ageTable.querySelectorAll('label');
-console.log(allOfLavel);
-// The first td in that table (with the word “Age”).
-const ageList = document.getElementById('age-list');
-const firstAge = ageTable.rows[0].cells[0]
-console.log(firstAge);
-// The form with name="search".
-const nameSearch = document.getElementsByName('search');
-console.log(nameSearch);
+// const ageTable = document.getElementById('age-table');
+// console.log(ageTable);
+// // All label elements inside that table (there should be 3 of them).
+// const allOfLavel = ageTable.querySelectorAll('label');
+// console.log(allOfLavel);
+// // The first td in that table (with the word “Age”).
+// const ageList = document.getElementById('age-list');
+// const firstAge = ageTable.rows[0].cells[0]
+// console.log(firstAge);
+// // The form with name="search".
+// const nameSearch = document.getElementsByName('search');
+// console.log(nameSearch);
 // The first input in that form.
 // The last input in that form.
+
+
+
+document.body.person = {
+    name: 'Tusar',
+    role: 'Web Developer'
+}
+
+Element.prototype.myCount = function() {
+    let count = 0;
+    for (let i = 0; i < this.children.length; i++) {
+        count++;
+    }
+
+    return count;
+}
+
+
+const box = document.getElementsByClassName('box')[0];
+// box.myCount = function() {
+//     let count = 0;
+//     for (let i = 0; i < this.children.length; i++) {
+//         count++;
+//     }
+
+//     return count;
+// }
+// console.log(box.myCount());
+
+// const elem = document.getElementById('elem');
+
+// console.log(elem.getAttribute('about'));
+// console.log(elem.setAttribute('name', 'Tusar'));
+// console.log(elem.outerHTML);
+
+// for (const attr of elem.attributes) {
+//     console.log(`${attr.name} = ${attr.value}`);
+// }
+
+// const chkbox = document.querySelector('input[type="checkbox"]');
+
+// if (chkbox.checked) {
+//     console.log('Yesss');
+// } else {
+//     console.log('Noo');
+// }
+
+// const myLink = document.getElementById('a');
+
+// console.log(myLink.getAttribute('href'));
