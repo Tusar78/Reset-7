@@ -7,7 +7,6 @@
 //   document.body.style.backgroundColor = "";
 // }, 3000);
 
-
 // const box = document.querySelector(".box");
 
 // if (box.children) {
@@ -59,24 +58,21 @@
 // The first input in that form.
 // The last input in that form.
 
-
-
 document.body.person = {
-    name: 'Tusar',
-    role: 'Web Developer'
-}
+  name: "Tusar",
+  role: "Web Developer",
+};
 
-Element.prototype.myCount = function() {
-    let count = 0;
-    for (let i = 0; i < this.children.length; i++) {
-        count++;
-    }
+Element.prototype.myCount = function () {
+  let count = 0;
+  for (let i = 0; i < this.children.length; i++) {
+    count++;
+  }
 
-    return count;
-}
+  return count;
+};
 
-
-const box = document.getElementsByClassName('box')[0];
+const box = document.getElementsByClassName("box")[0];
 // box.myCount = function() {
 //     let count = 0;
 //     for (let i = 0; i < this.children.length; i++) {
@@ -108,3 +104,13 @@ const box = document.getElementsByClassName('box')[0];
 // const myLink = document.getElementById('a');
 
 // console.log(myLink.getAttribute('href'));
+
+let user = {
+  name: "Tusar",
+  age: 25,
+};
+
+for (const div of document.querySelectorAll("[show-info]")) {
+  let field = div.getAttribute('show-info');
+  div.innerHTML = user[field]
+}
