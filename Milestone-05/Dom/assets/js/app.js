@@ -58,21 +58,21 @@
 // The first input in that form.
 // The last input in that form.
 
-document.body.person = {
-  name: "Tusar",
-  role: "Web Developer",
-};
+// document.body.person = {
+//   name: "Tusar",
+//   role: "Web Developer",
+// };
 
-Element.prototype.myCount = function () {
-  let count = 0;
-  for (let i = 0; i < this.children.length; i++) {
-    count++;
-  }
+// Element.prototype.myCount = function () {
+//   let count = 0;
+//   for (let i = 0; i < this.children.length; i++) {
+//     count++;
+//   }
 
-  return count;
-};
+//   return count;
+// };
 
-const box = document.getElementsByClassName("box")[0];
+// const box = document.getElementsByClassName("box")[0];
 // box.myCount = function() {
 //     let count = 0;
 //     for (let i = 0; i < this.children.length; i++) {
@@ -114,3 +114,15 @@ const box = document.getElementsByClassName("box")[0];
 //   let field = div.getAttribute('show-info');
 //   div.innerHTML = user[field]
 // }
+
+// const elem = document.querySelector('[data-widget-name]');
+
+const links = document.querySelectorAll('a');
+
+for (const link of links) {
+  let href = link.getAttribute('href');
+  if (!href) continue;
+  if (!href.includes('://')) continue;
+  if (href.startsWith("http://internal.com")) continue;
+  link.style.color = 'orange'
+}
