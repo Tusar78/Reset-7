@@ -105,12 +105,12 @@ const box = document.getElementsByClassName("box")[0];
 
 // console.log(myLink.getAttribute('href'));
 
-let user = {
-  name: "Tusar",
-  age: 25,
-};
+// let user = {
+//   name: "Tusar",
+//   age: 25,
+// };
 
-for (const div of document.querySelectorAll("[show-info]")) {
-  let field = div.getAttribute('show-info');
-  div.innerHTML = user[field]
-}
+// for (const div of document.querySelectorAll("[show-info]")) {
+//   let field = div.getAttribute('show-info');
+//   div.innerHTML = user[field]
+// }
