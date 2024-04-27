@@ -117,12 +117,17 @@
 
 // const elem = document.querySelector('[data-widget-name]');
 
-const links = document.querySelectorAll('a');
+// const links = document.querySelectorAll('a');
 
-for (const link of links) {
-  let href = link.getAttribute('href');
-  if (!href) continue;
-  if (!href.includes('://')) continue;
-  if (href.startsWith("http://internal.com")) continue;
-  link.style.color = 'orange'
-}
+// for (const link of links) {
+//   let href = link.getAttribute('href');
+//   if (!href) continue;
+//   if (!href.includes('://')) continue;
+//   if (href.startsWith("http://internal.com")) continue;
+//   link.style.color = 'orange'
+// }
+
+// Another way
+let selector = `a[href*='://']:not([href^='http://internal.com'])`;
+let links = document.querySelectorAll(selector);
+links.forEach(link => link.style.color = 'orange')
