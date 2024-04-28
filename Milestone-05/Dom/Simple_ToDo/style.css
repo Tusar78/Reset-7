@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-wrap {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px;
+    border: 1px solid mediumslateblue;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.todo-title {
+    font-size: 22px;
+    line-height: 32px;
+    color: #1f1f1f;
+    margin: 0;
+}
+
+.list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.list-item::before {
+    content: " - ";
+}
