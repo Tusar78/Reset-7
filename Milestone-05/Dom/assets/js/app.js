@@ -156,3 +156,18 @@ div.className = 'alert';
 // let div2 = div.cloneNode(true);
 // div2.querySelector('strong').innerHTML = 'By there';
 // div.after(div2)
+
+// const elem = document.getElementById('elem');
+
+// function clear(elem) {
+//     elem.remove();
+//     return elem;
+// }
+
+// setTimeout(function(){
+//     return clear(elem)
+// }, 3000)
+
+// const myTable = document.getElementById('table');
+// console.log(myTable.previousSibling.remove());
+// myTable.remove();
