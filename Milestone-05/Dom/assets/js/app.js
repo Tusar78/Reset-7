@@ -137,14 +137,17 @@ const div = document.createElement('div');
 div.innerHTML = `<strong>Hi there!</strong> You've read an important message`;
 div.className = 'alert';
 
-const names = document.getElementById('names');
-let li1 = document.createElement('li');
-li1.innerHTML = 'Tonmoy';
-names.prepend(li1);
+// const names = document.getElementById('names');
+// let li1 = document.createElement('li');
+// li1.innerHTML = 'Tonmoy';
+// names.prepend(li1);
 
-let li2 = document.createElement('li');
-li2.innerHTML = 'Aopo';
-names.append(li2);
+// let li2 = document.createElement('li');
+// li2.innerHTML = 'Aopo';
+// names.append(li2);
 
-names.before("Boro vai");
-names.after("Soto vai");
+// names.before("Boro vai");
+// names.after("Soto vai");
+
+document.body.append(div);
+setTimeout(() => div.remove(), 3000)
