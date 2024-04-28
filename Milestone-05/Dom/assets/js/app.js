@@ -152,7 +152,7 @@ div.className = 'alert';
 // document.body.append(div);
 // setTimeout(() => div.remove(), 3000)
 
-document.body.append(div);
-let div2 = div.cloneNode(true);
-div2.querySelector('strong').innerHTML = 'By there';
-div.after(div2)
+// document.body.append(div);
+// let div2 = div.cloneNode(true);
+// div2.querySelector('strong').innerHTML = 'By there';
+// div.after(div2)
