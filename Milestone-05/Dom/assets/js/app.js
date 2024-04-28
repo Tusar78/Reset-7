@@ -131,3 +131,20 @@
 // let selector = `a[href*='://']:not([href^='http://internal.com'])`;
 // let links = document.querySelectorAll(selector);
 // links.forEach(link => link.style.color = 'orange')
+
+
+const div = document.createElement('div');
+div.innerHTML = `<strong>Hi there!</strong> You've read an important message`;
+div.className = 'alert';
+
+const names = document.getElementById('names');
+let li1 = document.createElement('li');
+li1.innerHTML = 'Tonmoy';
+names.prepend(li1);
+
+let li2 = document.createElement('li');
+li2.innerHTML = 'Aopo';
+names.append(li2);
+
+names.before("Boro vai");
+names.after("Soto vai");
