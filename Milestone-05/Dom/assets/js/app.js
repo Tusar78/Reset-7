@@ -149,5 +149,10 @@ div.className = 'alert';
 // names.before("Boro vai");
 // names.after("Soto vai");
 
+// document.body.append(div);
+// setTimeout(() => div.remove(), 3000)
+
 document.body.append(div);
-setTimeout(() => div.remove(), 3000)
+let div2 = div.cloneNode(true);
+div2.querySelector('strong').innerHTML = 'By there';
+div.after(div2)
