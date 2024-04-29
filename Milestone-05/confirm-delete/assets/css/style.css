@@ -37,6 +37,12 @@ button {
     cursor: pointer;
 }
 
+:disabled {
+    background-color: #dcdcdc;
+    color: #7f7f7f;
+    border: none;
+}
+
 
 .source-box {
     padding: 30px 20px;
