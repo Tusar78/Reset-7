@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Event Handler</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <h2>Dom Event List</h2>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- <h2>Dom Event List</h2> -->
 
     <!-- Option 01 -->
-    <button onclick="document.body.style.backgroundColor='green'">Make Green</button>
+    <!-- <button onclick="document.body.style.backgroundColor='green'">Make Green</button>
    
     <button onclick="makeRed()">Make Red</button>
     <button class="make-yellow">Make Yellow</button>
     <button class="make-purple">Make Purple</button>
-    <button class="make-golden">Make Golden</button>
+    <button class="make-golden">Make Golden</button> -->
 
+    <div class="container-full">
+      <div class="container">
+        <input id="name" type="text" placeholder="Enter your name..." />
+        <button id="printName">Click</button>
+        <p class="display">Your Name: <span class="display-name"></span></p>
+      </div>
+    </div>
     <script src="./assets/js/app.js"></script>
-</body>
+  </body>
 </html>
