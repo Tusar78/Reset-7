@@ -22,34 +22,16 @@
 //     document.body.style.backgroundColor = 'goldenrod';
 // })
 
-// const input = document.querySelector('input[id=name]');
-// const printName = document.getElementById('printName');
-// const displayName = document.querySelector('.display-name');
+const input = document.querySelector('input[id=name]');
+const printName = document.getElementById('printName');
+const displayName = document.querySelector('.display-name');
 
-// printName.addEventListener('click', () => {
-//     let inputVal = input.value;
-//     displayName.textContent = inputVal;
-// })
+printName.addEventListener('click', () => {
+    let inputVal = input.value;
+    displayName.textContent = inputVal;
+})
 
-// input.addEventListener('keyup', (e) => {
-//     let inputVal = e.target.value;
-//     displayName.textContent = inputVal;
-// })
-
-const commentWrap = document.querySelector('.comment_wrap');
-const commentBox = document.querySelector('#comment-box');
-const post = document.querySelector('.post');
-
-
-const getComment = () => {
-    let comment  = commentBox.value;
-    let newComment = document.createElement('p');
-    newComment.className = 'comment_item'
-    newComment.innerHTML = comment;
-    commentWrap.append(newComment);
-
-    // Clear Comment Box
-    commentBox.value = '';
-}
-
-post.addEventListener('click', getComment);
+input.addEventListener('keyup', (e) => {
+    let inputVal = e.target.value;
+    displayName.textContent = inputVal;
+})
