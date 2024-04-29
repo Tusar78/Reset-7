@@ -22,16 +22,16 @@
 //     document.body.style.backgroundColor = 'goldenrod';
 // })
 
-const input = document.querySelector('input[id=name]');
-const printName = document.getElementById('printName');
-const displayName = document.querySelector('.display-name');
+// const input = document.querySelector('input[id=name]');
+// const printName = document.getElementById('printName');
+// const displayName = document.querySelector('.display-name');
 
-printName.addEventListener('click', () => {
-    let inputVal = input.value;
-    displayName.textContent = inputVal;
-})
+// printName.addEventListener('click', () => {
+//     let inputVal = input.value;
+//     displayName.textContent = inputVal;
+// })
 
-input.addEventListener('keyup', (e) => {
-    let inputVal = e.target.value;
-    displayName.textContent = inputVal;
-})
+// input.addEventListener('keyup', (e) => {
+//     let inputVal = e.target.value;
+//     displayName.textContent = inputVal;
+// })

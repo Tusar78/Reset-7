@@ -45,3 +45,27 @@ button {
 .display-name {
     color: #9233ff;
 }
+
+.comment_wrap {
+    border: 1px solid #9090ff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment_box {
+    margin-top: 20px;
+}
+
+#comment-box {
+    display: block;
+    outline: none;
+    border: 1px solid #9090ff;
+    padding: 8px 12px;
+}
+
+.post {
+    display: inline;
+    margin-top: 12px;
+}
