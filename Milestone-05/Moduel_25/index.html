@@ -8,7 +8,14 @@
 </head>
 <body>
     <h2>Dom Event List</h2>
-    <button onclick="console.log('Hello World')">Click Me</button>
+
+    <!-- Option 01 -->
+    <button onclick="document.body.style.backgroundColor='green'">Make Green</button>
+   
+    <button onclick="makeRed()">Make Red</button>
+    <button class="make-yellow">Make Yellow</button>
+    <button class="make-purple">Make Purple</button>
+    <button class="make-golden">Make Golden</button>
 
     <script src="./assets/js/app.js"></script>
 </body>
