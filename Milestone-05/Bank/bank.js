@@ -25,3 +25,20 @@ depositBtn.addEventListener('click', () => {
 
     depositInput.value = '';
 })
+
+withdrawBtn.addEventListener('click', () => {
+    const getExistingWithdraw = +withdrawText.innerText;
+    const getWithdrawNumber = +withdrawInput.value;
+    const totalWithdraw = getExistingWithdraw + getWithdrawNumber;
+    const getExistingBalance = +ammountText.innerText;
+    if (getExistingBalance >= getWithdrawNumber) {
+        let newBalance = getExistingBalance - getWithdrawNumber;
+        ammountText.innerText = newBalance;
+        withdrawText.innerText = totalWithdraw; 
+    } else {
+        alert('not anough money')
+    }
+
+
+    withdrawInput.value = '';
+})
