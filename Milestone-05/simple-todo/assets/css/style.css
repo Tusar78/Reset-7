@@ -8,6 +8,10 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background-color: rgb(29, 29, 29);
+}
+
 .container-full {
     width: 100%;
     display: flex;
@@ -49,15 +53,20 @@ button {
 }
 .todo_list {
     width: 350px;
-    padding: 30px 20px;
+    background-color: #fff;
+    padding: 30px 60px 30px 20px;
     border-radius: 6px;
-    box-shadow: 0 0 16px 0 rgba(0,0,0, 0.1);
+    box-shadow: 0 0 16px 0 rgba(255,255,255, 0.1);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .todo_item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
 }
 
