@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bank Dashboard</title>
+  </head>
+  <body>
+    <div class="w-full py-28 flex justify-center">
+      <div class="container-fluid w-full max-w-3xl">
+        <div class="w-full grid grid-cols-3 gap-4">
+          <div class="bg-blue-600 w-full p-4 rounded-md space-y-3">
+            <h2 class="text-white text-lg">Diposit</h2>
+            <h3 class="text-orange-50 text-3xl">
+              $<span id="d-amount">00</span>
+            </h3>
+          </div>
+          <div class="bg-fuchsia-600 w-full p-4 rounded-md space-y-3">
+            <h2 class="text-white text-lg">Withdraw</h2>
+            <h3 class="text-orange-50 text-3xl">
+              $<span id="d-amount">00</span>
+            </h3>
+          </div>
+          <div class="bg-yellow-500 w-full p-4 rounded-md space-y-3">
+            <h2 class="text-white text-lg">Ammount</h2>
+            <h3 class="text-orange-50 text-3xl">
+              $<span id="d-amount">00</span>
+            </h3>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 gap-4 mt-4">
+          <div class="bg-lime-400 w-full p-4 rounded-md space-y-3">
+            <h2 class="text-white text-lg">Please Diposit</h2>
+            <input
+              type="text"
+              id="diposit-ammount"
+              class="border px-3 py-2 w-full block rounded"
+              placeholder="Enter Ammount"
+            />
+            <button
+              id="submit-btn"
+              class="bg-white shadow rounded text-black px-8 py-2"
+            >
+              Diposit
+            </button>
+          </div>
+          <div class="bg-cyan-500 w-full p-4 rounded-md space-y-3">
+            <h2 class="text-white text-lg">Please Withdraw</h2>
+            <input
+              type="text"
+              id="diposit-ammount"
+              class="border px-3 py-2 w-full block rounded"
+              placeholder="Enter Ammount"
+            />
+            <button
+              id="submit-btn"
+              class="bg-white shadow rounded text-black px-8 py-2"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bank.js"></script>
+  </body>
+</html>
