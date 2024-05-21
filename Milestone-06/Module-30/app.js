@@ -65,14 +65,21 @@
 // console.log(sumOfSquire);
 // console.log(avg.toFixed(2));
 
-const arr1 = [2, 4, 7, 9];
-const arr2 = [1, 8, 6, 3];
+// const arr1 = [2, 4, 7, 9];
+// const arr2 = [1, 8, 6, 3];
 
-const arrCombine = (arr1, arr2) => {
-    const newArr = [...arr1, ...arr2];
-    const maxVal = Math.max(...newArr);
-    return {maxVal}
-}
+// const arrCombine = (arr1, arr2) => {
+//     const newArr = [...arr1, ...arr2];
+//     const maxVal = Math.max(...newArr);
+//     return {maxVal}
+// }
 
-const {maxVal} = arrCombine(arr1, arr2);
-console.log(maxVal);
+// const {maxVal} = arrCombine(arr1, arr2);
+// console.log(maxVal);
+
+const numbers = [4, 5, 6 , 7, 9];
+const newArr = numbers.reduce((prev, curr) => {
+    return prev+curr;
+}, 0)
+
+console.log(newArr);
