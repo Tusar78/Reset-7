@@ -23,11 +23,37 @@
 // tusar.dept();
 
 
-const person = {
-    name : "tusar",
-    age: 23,
-    3: 'Rakib'
+// const person = {
+//     name : "tusar",
+//     age: 23,
+//     3: 'Rakib'
+// }
+
+// const my = 'name';
+// console.log(person[my]);
+
+// Practice task
+
+const data = {
+    Sophia: {
+        id: 33,
+        study: [
+            {
+                primary: [
+                    {school_name: "ABC primary school"},
+                    {location: "Peters Burg"},
+                ]
+            },
+            {
+                secondary: [
+                    {school_name: "ABC secondary school"},
+                    {location: "St Lorence"},
+                ]
+            }
+        ]
+    }
 }
 
-const my = 'name';
-console.log(person[my]);
+// Get Secondary School Loaction
+const secondSchool = data?.Sophia?.study[1]?.secondary[1]?.location;
+console.log(secondSchool);
