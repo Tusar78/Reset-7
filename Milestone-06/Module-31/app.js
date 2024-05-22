@@ -34,26 +34,32 @@
 
 // Practice task
 
-const data = {
-    Sophia: {
-        id: 33,
-        study: [
-            {
-                primary: [
-                    {school_name: "ABC primary school"},
-                    {location: "Peters Burg"},
-                ]
-            },
-            {
-                secondary: [
-                    {school_name: "ABC secondary school"},
-                    {location: "St Lorence"},
-                ]
-            }
-        ]
-    }
-}
+// const data = {
+//     Sophia: {
+//         id: 33,
+//         study: [
+//             {
+//                 primary: [
+//                     {school_name: "ABC primary school"},
+//                     {location: "Peters Burg"},
+//                 ]
+//             },
+//             {
+//                 secondary: [
+//                     {school_name: "ABC secondary school"},
+//                     {location: "St Lorence"},
+//                 ]
+//             }
+//         ]
+//     }
+// }
 
-// Get Secondary School Loaction
-const secondSchool = data?.Sophia?.study[1]?.secondary[1]?.location;
-console.log(secondSchool);
+// // Get Secondary School Loaction
+// const secondSchool = data?.Sophia?.study[1]?.secondary[1]?.location;
+// console.log(secondSchool);
+
+const arr = [10, 20, 30];
+// console.log(arr, arr.length);
+// arr.length = 0;
+// console.log(arr);
+arr.forEach(elem => console.log(elem * elem))
