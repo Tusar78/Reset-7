@@ -1,9 +1,16 @@
-const myFunc = (cb, name) => {
-    cb(name);
+function loadData() {
+  const JSONLINK = "https://jsonplaceholder.typicode.com/users";
+  fetch(JSONLINK)
+    .then((response) => response.json())
+    .then((data) => dosplayData(data));
 }
 
-const cb = (name) => {
-    console.log(`My name is ${name}`);
-}
-
-myFunc(cb, 'Tusar');
+const dosplayData = (data) => {
+  const ul = document.createElement('ul');
+  for (const d of data) {
+    let li =document.createElement('li');
+    li.innerHTML= `${d.name}`;
+    ul.append(li);
+  }
+  document.body.append(ul);
+};
